@@ -90,7 +90,13 @@
                             <outletCollection property="gestureRecognizers" destination="AeI-i1-Aoa" appends="YES" id="Me2-zE-oXL"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="TIp Calculator" id="iA1-DU-2hS"/>
+                    <navigationItem key="navigationItem" title="TIp Calculator" id="iA1-DU-2hS">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="970-nJ-7Wi">
+                            <connections>
+                                <segue destination="R8o-Sd-Whi" kind="push" id="k6O-J8-ed2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="Zcy-f2-vta" id="nUo-zX-jsY"/>
                         <outlet property="tipControl" destination="GaH-YM-Hqd" id="dhF-5l-sOt"/>
@@ -105,7 +111,26 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="872.79999999999995" y="37.331334332833585"/>
+            <point key="canvasLocation" x="1812" y="37.331334332833585"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="UQE-BP-nNU">
+            <objects>
+                <viewController id="R8o-Sd-Whi" customClass="SettingsViewController" customModule="Tippy_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4qG-ss-Na7"/>
+                        <viewControllerLayoutGuide type="bottom" id="H2S-tv-0tQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k0U-UL-Qz1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DX5-vY-IJf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cPW-he-AW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2497" y="41"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="esV-zk-2kM">
@@ -118,12 +143,31 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Hyc-GL-7Tg"/>
+                        <segue destination="9X1-Y8-Mag" kind="relationship" relationship="rootViewController" id="Hyc-GL-7Tg"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eZT-93-nz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="125.59999999999999" y="38.23088455772114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oTg-YP-BDm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9X1-Y8-Mag" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="aM6-CZ-6iE"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wcl-p3-BvH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RAb-pV-Hpd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lze-qr-gO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872.79999999999995" y="37.331334332833585"/>
         </scene>
     </scenes>
 </document>
